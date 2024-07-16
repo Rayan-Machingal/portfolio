@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+//3
+
+function checkElements(array) {
+    let switcher = false; // Start with returning true
+
+    return array.map(item => {
+        if (item === "bridgeon") {
+            switcher = !switcher; // Switch to the opposite boolean value
+        }
+        return !switcher;
+    });
+}
+
+// Example usage:
+const array = ["apple", "bridgeon", "orange", "banana", "bridgeon", "grape"];
+console.log(checkElements(array)); 
+
+</script>
+
+
+</body>
+</html>

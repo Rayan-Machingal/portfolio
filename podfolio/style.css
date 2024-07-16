@@ -1,0 +1,500 @@
+/* HOME PAGE */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #080808;
+}
+
+.left {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.firstpart {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftpart {
+    width: 500px;
+    font-size: 2.5rem;
+    margin-top: 110px;
+}
+
+.rightpart {
+    width: 30%;
+    margin-top: 0px;
+    height: 500px;
+}
+
+.rightpart img {
+    width: 90%;
+    margin: 50px;
+}
+
+.purple {
+    color: #ff004f;
+}
+
+.div3 {
+    color: #09f0f0;
+}
+
+ul a {
+    text-decoration: none;
+    color: antiquewhite;
+    position: relative;
+}
+
+ul a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+ul a:hover::after {
+    width: 100%;
+}
+
+#element {
+    color: #09f0f0;
+}
+
+/* ABOUT PAGE */
+h3 {
+    margin-left: 50px;
+}
+
+.about {
+    color: gray;
+    margin-left: 50px;
+}
+
+.secondsection {
+    height: 100vh;
+}
+
+.megaabout {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* SKILL PAGE */
+#skill {
+    height: 80vh;
+}
+
+.skill-list div {
+    background-color: #262626;
+    padding: 40px;
+}
+
+.html, .css, .js {
+    height: auto;
+    width: 300px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+.html:hover, .css:hover, .js:hover {
+    transform: translateY(-10px);
+}
+
+/* PROJECT PAGE */
+#project {
+    padding: 50px 0;
+}
+
+.worklist {
+    display: flex;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-left: 80px;
+}
+
+.work img {
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+
+ .layer p, .layer a {
+    margin-right: 80px;
+}
+
+.layer h3 {
+    font-weight: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    
+}
+
+.layer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+/* CONTACT PAGE */
+.icons a {
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 15px;
+    color: #ababab;
+    margin-right: 10px;
+    transition: transform .5s;
+}
+
+.icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.submit {
+    background-color: #ff004f;
+    width: 110px;
+    height: 40px;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    transition: transform .5s;
+}
+
+.submit:hover {
+    background-color: #ec3838;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, textarea {
+    width: 800px;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 15px 0px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#msg {
+    color: #61b752;
+    margin-top: 50px;
+    display: block;
+}
+/* 
+/* TECHNICAL SKILLS SECTION */
+.contain{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+h1 {
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 23px;
+    margin-top: 40px;
+}
+
+.technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.technical-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(250, 247, 247);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: #ff004f;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.technical-bars .bar .progress-line.html span {
+    width: 90%;
+}
+
+.technical-bars .bar .progress-line.css span {
+    width: 80%;
+}
+
+.technical-bars .bar .progress-line.js span {
+    width: 70%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "80%";
+}
+
+.progress-line.js span::after {
+    content: "70%";
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 8.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+} 
+
+
+/* 3 */
+
+        /* 2 */
+        .radial-bars {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        
+        .radial-bar {
+            width: 50%;
+            height: 170px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .radial-bar svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-90deg);
+            width: 120px;
+            height: 160px;
+        }
+        
+        .radial-bar .progress-bar {
+            stroke-width: 10;
+            stroke: white;
+            fill: transparent;
+            stroke-dasharray: 502;
+            stroke-dashoffset: 502;
+            stroke-linecap: round;
+            animation: animate-bar 1s linear forwards;
+        }
+        
+        @keyframes animate-bar {
+            100% {
+                stroke-dashoffset: -1;
+            }
+        }
+        
+        .path {
+            stroke-width: 10;
+            stroke:#ff004f;
+            fill: transparent;
+            stroke-dasharray: 502;
+            stroke-dashoffset: 502;
+            stroke-linecap: round;
+        }
+        
+        .path-1 {
+            animation: animate-path1 1s 1s linear forwards;
+        }
+        
+        .path-2 {
+            animation: animate-path2 1s 1s linear forwards;
+        }
+        
+        .path-3 {
+            animation: animate-path3 1s 1s linear forwards;
+        }
+        
+        .path-4 {
+            animation: animate-path4 1s 1s linear forwards;
+        }
+        
+        @keyframes animate-path1 {
+            100% {
+                stroke-dashoffset: 50;
+            }
+        }
+        
+        @keyframes animate-path2 {
+            100% {
+                stroke-dashoffset: 175;
+            }
+        }
+        
+        @keyframes animate-path3 {
+            100% {
+                stroke-dashoffset: 125;
+            }
+        }
+        
+        @keyframes animate-path4 {
+            100% {
+                stroke-dashoffset: 75;
+            }
+        }
+        
+        .radial-bar .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 17px;
+            font-weight: 500;
+            animation: showText 0.5s 1s linear forwards;
+            opacity: 0;
+        }
+        
+        .radial-bar .text {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            bottom: -5px;
+            transform: translateX(-50%);
+            font-size: 17px;
+            font-weight: 500;
+            animation: showText 0.5s 1s linear forwards;
+            opacity: 0;
+        }
+      
+        
